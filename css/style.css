@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*Navigácia*/
+nav{
+    background: #004996;
+    color: white;
+    align-items: center;
+    display: flex;
+    height: 80px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 35px;
+    position: relative;
+}
+nav li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: goldenrod;
+    transition-duration: .5s;
+}
+nav li:hover::before{
+    width: 70px;
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+nav a:hover{
+    transition: .5s;
+    border-radius: 5px;
+}
+.logo img{
+    width: 55px;
+    margin-left: 10px;
+}
+.nadpis{
+    font-size: 35px;
+    margin-left: 5px;
+    align-items: center;
+}
+.sidebar{
+    position:fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #004996;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.domov h3{
+    font-size: 30px;
+    border: 2px solid transparent;
+    border-bottom-color: goldenrod;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+/*Footer*/
+
+footer{
+    background: #004996;
+    padding-top: 50px;
+}
+.footer-content{
+    width: 100%;
+    color: white;
+}
+.footer-content h3{
+    font-size: 25px;
+    border: 2px solid transparent;
+    border-bottom-color: goldenrod;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 270px;
+}
+.footer-content p{
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+.footer-content ul{
+    text-align: center;
+}
+.footer-content p i a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 15px;
+}
+.menu{
+    padding: 0;
+}
+.menu a{
+    color: white;
+}
+.menu li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+    color: white;
+}
+.menu li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: goldenrod;
+    transition-duration: .5s;
+}
+.menu li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
+    font-size: 25px;
+}
+a:hover{
+    color: goldenrod;
+}
+.social-icons i:hover{
+    color: goldenrod;
+}
+.bottom-bar{
+    background:#003670;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.bottom-bar p{
+    color: #ffffff;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: 500px;
+    }
+    .footer-content{
+        margin-bottom: 30px;
+    }
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.logo-body{
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding: 20px;
+}

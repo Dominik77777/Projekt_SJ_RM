@@ -90,28 +90,10 @@ nav a:hover{
     border: 2px solid transparent;
     border-bottom-color: goldenrod;
     text-align: center;
-    margin-bottom: 40px;
-    margin-right: 70px;
-    margin-left: 70px;
-    margin-top: 20px;
 }
 .menu-button{
     display: none;
 }
-@media(max-width: 800px){
-    .hideOnMobile{
-        display: none;
-    }
-    .menu-button{
-        display: block;
-    }
-}
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
-}
-
 /*Footer*/
 
 footer{
@@ -237,9 +219,9 @@ h1{
     padding-bottom: 50px;
     margin-top: 20px;
 }
-p{
+p {
     text-align: center;
     font-size: 20px;
     margin-bottom: 15px;
-    padding: 20px;
+    padding: 80px;
 }
